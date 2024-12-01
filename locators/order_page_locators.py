@@ -1,0 +1,22 @@
+from selenium.webdriver.common.by import By
+
+class OrderPageLocators:
+    NAME = (By.XPATH, "//input[@placeholder='* Имя']")
+    LAST_NAME = (By.XPATH, "//input[@placeholder='* Фамилия']")
+    ADDRESS = (By.XPATH, "//input[@placeholder='* Адрес: куда привезти заказ']")
+    STATION_CLICK = (By.XPATH, "//div[@class='select-search']")
+    STATION_BULVAR = (By.XPATH, ".//div[@class='select-search__select']/ul/li[1]/button/div[2]")
+    STATION_VOROBYEVY_GORY = (By.XPATH, ".//div[@class='select-search__select']/ul/li[1]/button/div[1]")
+    PHONE_NUMBER = (By.XPATH, "//input[@placeholder='* Телефон: на него позвонит курьер']")
+    NEXT_BUTTON = (By.XPATH, "//button[text()='Далее']")
+    KUKI = (By.XPATH, "//button[@class='App_CookieButton__3cvqF']")
+    DATE_CLICK = (By.XPATH, "//div[@class='react-datepicker__input-container']")
+    DATE = (By.XPATH, "//div[@aria-label='Choose четверг, 26-е декабря 2024 г.']")
+    DAY_CLICK = (By.XPATH, "//div[@class='Dropdown-control']")
+    DAY = (By.XPATH, "(//div[@class='Dropdown-option'])[1]")
+    COLOR_BLACK = (By.XPATH, "(//input[@class='Checkbox_Input__14A2w'])[1]")
+    COLOR_GRAY = (By.XPATH, "(//input[@class='Checkbox_Input__14A2w'])[2]")
+    COMMENT = (By.XPATH, "//input[@placeholder='Комментарий для курьера']")
+    ORDER_BUTTON = (By.XPATH, "//button[@class='Button_Button__ra12g Button_Middle__1CSJM']")
+    APPROVE_BUTTON = (By.XPATH, "(//button[@class='Button_Button__ra12g Button_Middle__1CSJM'])[2]")
+    TEXT_SUCCESS_ORDER = (By.XPATH, "//div[text()='Заказ оформлен']")
